@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "16"
+brancher:
+  only:
+    - "dev"
+    - "master"
+script:
+  - "npm run cover"

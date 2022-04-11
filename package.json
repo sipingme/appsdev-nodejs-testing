@@ -1,0 +1,17 @@
+{
+  "name": "appsdev-nodejs-testing",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha test/mocha.js",
+    "cover": "istanbul cover _mocha test/mocha.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "istanbul": "^0.4.5",
+    "mocha": "^9.2.2"
+  }
+}
