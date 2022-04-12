@@ -15,7 +15,7 @@ class Demo extends PureComponent {
   }
   add = () => {
     this.setState({
-      value: this.state.value++
+      value: this.state.value + 1
     })
   }
   change = ev => {
@@ -23,7 +23,7 @@ class Demo extends PureComponent {
       value: ev.target.value
     })
   }
-  compontentWillReceiveProps (nextProps) {
+  UNSAFE_componentWillReceiveProps (nextProps) {
     this.setState({
       title: nextProps.title
     })
@@ -32,7 +32,7 @@ class Demo extends PureComponent {
     return (
       <div className='container'>
         <h3>{this.state.title}</h3>
-        <divc className="counter">{this.state.value}</divc>
+        <div className="counter">{this.state.value}</div>
         <input value={this.state.value} onChange={this.change} />
         <button onClick={this.add}>Value ++</button>
       </div>

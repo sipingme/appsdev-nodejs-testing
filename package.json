@@ -5,21 +5,30 @@
   "main": "index.js",
   "scripts": {
     "mocha": "mocha test/mocha.js",
-    "cover": "istanbul cover _mocha --reporter test/mocha.js"
+    "cover": "istanbul cover _mocha --reporter test/mocha.js",
+    "jest": "jest test/demo.test.js --coverage",
+    "webdriver": "mocha test/webdriver.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^4.3.6",
-    "istanbul": "^0.4.5",
-    "jest": "^27.5.1",
-    "mocha": "^9.2.2"
-  },
-  "dependencies": {
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-jest": "^27.5.1",
     "benchmark": "^2.1.4",
-    "react-test-renderer": "^18.0.0"
+    "chai": "^4.3.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "istanbul": "^0.4.5",
+    "jest": "^27.5.1",
+    "jsdom": "19.0.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^9.2.2",
+    "selenium-webdriver": "^4.1.1",
+    "sinon": "^13.0.1"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   }
 }
